@@ -17,7 +17,7 @@ input, button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: cornflowerblue;
+    background-color: orange;
     color: white;
 }
 
@@ -39,7 +39,7 @@ main {
 
 .input_section > h2 {
     text-align: center;
-    color: cornflowerblue;
+    color: orange;
 }
 
 .input_section > form > .input {
@@ -47,8 +47,9 @@ main {
 }
 
 .input_section > form > button {
-    background-color: cornflowerblue;
-    color: white;
+    background-color: orange;
+    font-weight: 600;
+    color: black;
     border: 0;
     border-radius: 5px;
     display: block;
@@ -57,8 +58,10 @@ main {
     cursor: pointer;
 }
 
-.input_section > form > button > span {
-    font-weight: bold;
+.input_section > form > button:hover {
+    background-color: black;
+    color: orange;
+    transition: all 0.4s;
 }
 
 .input_section > form > .input > input {
@@ -68,10 +71,8 @@ main {
     border-radius: 5px;
 }
 
-
-
 .input_section > form > .input > label {
-    color: cornflowerblue;
+    color: orange;
     font-weight: bold;
 }
 
@@ -82,7 +83,7 @@ main {
 }
 
 .input_section > form > .input_inline > label {
-    color: cornflowerblue;
+    color: black;
     font-weight: bold;
     margin-right: 10px;
 }
@@ -98,7 +99,7 @@ main {
 }
 
 .search_section > h2 {
-    color: cornflowerblue;
+    color: orange;
 }
 
 .search_section > form {
@@ -120,11 +121,16 @@ main {
 }
 
 .search_section > form > button {
-    background-color: cornflowerblue;
-    color: white;
+    background-color: orange;
+    color: black;
     border: 0;
     border-radius: 5px;
     cursor: pointer;
+}
+.search_section > form > button:hover {
+    background-color: black;
+    color: orange;
+    transition: all 0.4s;
 }
 
 .book_shelf {
@@ -135,7 +141,7 @@ main {
 }
 
 .book_shelf > h2 {
-    color: cornflowerblue;
+    color: orange;
 }
 
 .book_shelf > .book_list {
@@ -168,5 +174,10 @@ main {
 
 .book_shelf > .book_list > .book_item > .action > .red {
     background-color: darkred;
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .blue {
+    background-color: darkblue;
     color: white;
 }
